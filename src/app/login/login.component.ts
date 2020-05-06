@@ -2,11 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, FormControl, Validators, EmailValidator } from '@angular/forms';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {Router} from "@angular/router"
+import DataUsers from '../../assets/DataUsers.json';
 
-const users= [
-  {email:"admin@email.com",password:"12345678"},
-  {email:"user@email.com",password:"1234qwer"}
-];
+
+const users = DataUsers;
 
 @Component({
   selector: 'app-login',
